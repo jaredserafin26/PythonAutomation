@@ -1,0 +1,14 @@
+XPATH = //div[@class='products']//div[3]//button
+XPATH Traverse= //form/div[1]/input
+XPATH = //button[text()='Save New Password']
+XPATH = //input[@type='text']
+
+
+a href TAG
+a tag = By.LINK_TEXT,"Forgot password? use keyword
+
+#CSS SELECTOR
+CSS SELECTOR = "input[name='name']
+CSS SELECTOR = form div:nth-child(2) input
+CSS SELECTOR ID = #confirmPassword
+
