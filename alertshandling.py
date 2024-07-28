@@ -7,6 +7,7 @@ service_obj = Service(r'C:\Users\jjpol\AppData\Local\Programs\Python\Python312\c
 name = "Jared"
 driver = webdriver.Chrome(service=service_obj)
 driver.get("https://rahulshettyacademy.com/AutomationPractice/")
+driver.maximize_window()
 
 driver.find_element(By.CSS_SELECTOR, "#name").send_keys(name)
 driver.find_element(By.ID, "alertbtn").click()
@@ -15,6 +16,7 @@ driver.find_element(By.ID, "alertbtn").click()
 alert = driver.switch_to.alert #place alert into object
 alertText = alert.text
 print(alertText)
+time.sleep(2)
 alert.accept() #OK
 #alert.dismiss() #CANCEL
 assert name in alertText

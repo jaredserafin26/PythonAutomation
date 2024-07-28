@@ -2,7 +2,8 @@ XPATH = //div[@class='products']//div[3]//button
 XPATH Traverse= //form/div[1]/input
 XPATH = //button[text()='Save New Password']
 XPATH = //input[@type='text']
-
+XPATH = "//div[@class='products']/div
+XPATH = "//button[text()='PROCEED TO CHECKOUT']"
 
 a href TAG
 a tag = By.LINK_TEXT,"Forgot password? use keyword
@@ -11,4 +12,10 @@ a tag = By.LINK_TEXT,"Forgot password? use keyword
 CSS SELECTOR = "input[name='name']
 CSS SELECTOR = form div:nth-child(2) input
 CSS SELECTOR ID = #confirmPassword
+CSS SELECTOR CLASS = .confirmPassword
+CSS SELECTOR = tr td:nth-child(5) p
 
+Best Practices
+• Use Implicit Waits for a basic, global wait time for all elements. This can be set once and is useful for dealing with simple loading times.
+• Use Explicit Waits for more complex scenarios where specific conditions must be met. This ensures that your test is responsive and efficient.
+• Avoid time.sleep except in rare cases where you need a hard pause, such as when debugging or when dealing with non-UI-related delays.
